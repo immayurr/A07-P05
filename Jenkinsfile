@@ -10,8 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/immayurr/A07-P05.git'
+                git branch: 'main', url: 'https://github.com/immayurr/A07-P05.git'
             }
         }
 
@@ -23,7 +22,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'C:\\coding\\python313\\python.exe -m py_compile app.py'
+                bat 'python -m py_compile app.py'
                 echo "${env.APP_NAME} version ${env.APP_VERSION} compiled successfully."
             }
         }
