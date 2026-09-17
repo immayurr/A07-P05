@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         APP_NAME = 'Student Management and Academic Performance System'
-        APP_VERSION = '1.0.0'
+        APP_VERSION = '9.9.9'
     }
 
     stages {
